@@ -12,9 +12,6 @@ for ($i=0; $i<20; $i++) {
  ->item(0)->childNodes->item(0)->nodeValue;
  echo ("<div class=\"card\">");
  echo ("<a href=\"".$item_link."\"><h5 class=\"card-header\">".$item_title."</h5></a>");
-// echo ("<div class=\"card-body\">");
-// echo ("<p class=\"card-text\">".$item_desc."</p>");
- //echo ("</div>");
 echo ("</div>");
 }
 ?>

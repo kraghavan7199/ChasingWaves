@@ -7,12 +7,15 @@
 <script src="home.js"></script>
 </head>
 <body>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
   		<div class="container">
-  	
-    <div class="jumbotron text-center">
-  		<h1>ChasingWaves</h1>
-  		<p>When you think of beaches,parties and amazing sea food, you think of Goa.<br>Experince Goa like never before.</p>
-  	</div>
+  
     	<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<div class="panel panel-login">

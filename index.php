@@ -46,42 +46,54 @@ echo '
   </ul>
   </div>
 </nav>
+<div class="card text-center">
+  <h5 class="card-header text-center">Learn About Goa</h5>
+  <div class="card-body">
+    <p class="card-text">Not sure where to stay in Goa.Learn more to make a better Goa experience.</p>
+    <a href="data.php" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">
+ </div>
+</div>
 <br>
-<div class="card">
+<div class="card text-center">
   <h5 class="card-header text-center">Book A Hotel Room</h5>
   <div class="card-body">
     <p class="card-text">Choose from our huge catalog of hotels to have a wonderful experience in Goa.</p>
     <a href="#" class="btn btn-primary">Book</a>
   </div>
+  <div class="card-footer text-muted">
+ </div>
 </div>
-
-<div class="card">
-  <h5 class="card-header text-center">Learn About Goa</h5>
-  <div class="card-body">
-    <p class="card-text">Learn More about Goa to properly plan your stay.</p>
-    <a href="#" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
-<div class="card">
+<br>
+<div class="card text-center">
   <h5 class="card-header text-center">Latest From Goa</h5>
   <div class="card-body">
     <p class="card-text">Get the latest news from Goa.</p>
     <a href="rss.php" class="btn btn-primary">News</a>
   </div>
+  <div class="card-footer text-muted">
+ </div>
 </div>
-<div class="card">
+<br>
+<div class="card text-center">
   <h5 class="card-header text-center">Your Reservations</h5>
   <div class="card-body">
     <p class="card-text">Check Out All your Reservations</p>
     <a href="res.php" class="btn btn-primary">Reservations</a>
   </div>
+  <div class="card-footer text-muted">
+ </div>
 </div>
-<div class="card">
+<br>
+<div class="card text-center">
   <h5 class="card-header text-center">Forum</h5>
   <div class="card-body">
     <p class="card-text">Chat with community</p>
     <a href="forum.php" class="btn btn-primary">Forum</a>
   </div>
+  <div class="card-footer text-muted">
+ </div>
 </div>
 '
 ?>

@@ -2,19 +2,21 @@
 <head>
   <title>Book Rooms</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>
-var areas = ['Calangute Area', 'Baga Area', 'Candolim Area', 'Anjuna Area',
-       'Vagator Area', 'Betim', 'Panjim Area', 'Salcette, Goa',
-       'Mobor Beach Area', 'Palolem Beach Area',
-       'Other North Goa Beaches', 'Others', 'Colva Area',
-       'Bogmalo Beach Area', 'Varca Area', 'Margao', 'Betalbatim',
-       'Salcette', 'Alto De Porvorim', 'Mapusa', 'Ponda', 'Vasco da Gama'];
-       $( "#area" ).autocomplete({  
-    source: areas
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>  
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>  
+  <script>
+  $(function() {  
+    var areas = ["Calangute Area", "Baga Area", "Candolim Area", "Anjuna Area",
+           "Vagator Area", "Betim", "Panjim Area", "Salcette, Goa",
+           "Mobor Beach Area", "Palolem Beach Area","Colva Area",
+           "Bogmalo Beach Area", "Varca Area", "Margao", "Betalbatim",
+           "Salcette", "Alto De Porvorim", "Mapusa", "Ponda", "Vasco da Gama"];
+   $( "#area" ).autocomplete({  
+     source: areas  
+   });  
  });  
-});  
-</script>
+  </script>
 <link href="a.css" rel="stylesheet" type="text/css">
 </head>
 <body>

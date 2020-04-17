@@ -46,4 +46,5 @@ else
 	echo "<p><a href=\"home.php\" id=\"login_link\">Login here</a></p>";
   echo "</div>";
 }
+mysqli_close($con);
   ?>

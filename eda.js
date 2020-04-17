@@ -44,6 +44,7 @@ xmlhttp.onreadystatechange=function()
       fix();
 
 displayRating(areas,rating);
+
 for(var i=0;i<hotels.length;i++)
   {
     for(var j=0;j<20;j++)
@@ -73,6 +74,10 @@ xmlhttp.send();
 
 function displayRating(areas,val)
 {
+  var maxValue = Math.max.apply(null, val);
+  var a = val.indexOf(maxValue);
+  var ar = areas[a];
+ document.getElementById("lol").innerHTML=ar + " has higher rated hotels on average";
   new Chart(document.getElementById("bar-chart"), {
       type: 'bar',
       data: {
@@ -81,6 +86,7 @@ function displayRating(areas,val)
           {
             label: "Ratings",
             data: val
+            
           }
         ]
       },
@@ -95,6 +101,10 @@ function displayRating(areas,val)
 }
 function displayPrice(areas,price)
 {
+  var maxValue = Math.max.apply(null, price);
+  var a = price.indexOf(maxValue);
+  var ar = areas[a];
+ document.getElementById("lol2").innerHTML=ar + " has higher priced hotels on average";
   new Chart(document.getElementById("price-chart"), {
       type: 'bar',
       data: {

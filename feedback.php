@@ -47,73 +47,31 @@ echo '
   </ul>
   </div>
 </nav>';
-$con=mysqli_connect("localhost","root","","chasing");
-if (mysqli_connect_errno($con))
-{
-echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
-$result = mysqli_query($con,"SELECT * FROM res WHERE name='$n'");
-if (mysqli_error($con))
-{
-   die(mysqli_error($con));
-}
-if(mysqli_num_rows($result) > 0)
-{
-
-$row = mysqli_fetch_array($result);  
-$_SESSION["hotel"] = $row["hotelname"];
-function lol($r)
-{
-   if(gettype($r["rating"])=="NULL")
-   {
-     return '<a href="feedback.php">Add Rating</a>';
-   }
-   else
-   {
-     return $r["rating"];
-   }
-
-}
-echo '<div class="card">
-  <h5 class="card-header text-center">Your Reservation</h5>
-  <div class="card-body">
-    <table class="table table-bordered" cellspacing="0">
-    <tr>
-        <td><b><i>Hotel</b></i></td>
-        <td>'.$row["hotelname"].'</td>
-    </tr>
-    <tr>
-        <td><b><i>CheckIn</b></i></td>
-        <td>'.$row["checkin"].'</td>
-    </tr>
-    <tr>
-        <td><b><i>CheckOut</b></i></td>
-        <td>'.$row["checkout"].'</td>
-    </tr>
-    <tr>
-        <td><b><i>Rooms</b></i></td>
-        <td>'.$row["rooms"].'</td>
-    </tr>
-    <tr>
-        <td><b><i>Price</b></i></td>
-        <td>'.$row["price"].'</td>
-    </tr>
-    <tr>
-        <td><b><i>Rating</b></i></td>
-        <td>'.lol($row).'</td>
-    </tr>
-    </table>
-  </div>
-</div>';
-}
-else{
-echo '<h1>You have no reservations yet</h1>';
-
-}
-
-
-mysqli_close($con);
-
 ?>
+<div class="card">
+  <h5 class="card-header text-center">Feedback</h5>
+  <div class="card-body">
+<form action="addr.php" id="upform" method="post" enctype="multipart/form-data">
+	 
+	 <div class="form-group">
+		 <div style="text-align:center">
+		 <input type="submit" value="Submit" style="font-size:1em; width: 50%;" id="upload_button"/>
+		 </div>
+		 </div>
+		   <table class="table table-bordered" cellspacing="0">
+         <tr>
+   <td> Rating</td>
+
+   <td><div class="form-group">
+   <input type="text" id="project_title" name="rating" placeholder="Rating(Between 0-5)">
+ </div></td>
+</tr>
+       </table>
+     </form>
+     <div style="text-align:center">
+<textarea id="desc" name="description" form="upform">Description</textarea></div>
+</div>
+</div>
+</div>
 </body>
 </html>

@@ -52,24 +52,34 @@ echo '
   </div>
 </nav>
 
-<div class="card">
+<div class="card text-center">
   <h5 class="card-header text-center">High Rated Hotels</h5>
 <canvas id="bar-chart" width="200" height="200"></canvas>
   <div class="card-body">
     <p id="high" class="card-text"></p>
   </div>
-  <div class="card">
+  
+  <div id="lol" class="card-footer text-muted">
+  
+ </div>
+  </div>
+  <div class="card text-center">
     <h5 class="card-header text-center">Prices Of Hotels</h5>
   <canvas id="price-chart" width="200" height="200"></canvas>
     <div class="card-body">
       <p id="high" class="card-text"></p>
     </div>  
+    <div id="lol2" class="card-footer text-muted">
+    
+   </div>
+    </div>
     <div class="card">
-      <h5 class="card-header text-center">Rainfall</h5>
+      <h5 class="card-header text-center">Weather</h5>
     <canvas id="rain-chart" width="200" height="200"></canvas>
       <div class="card-body">
         <p id="high" class="card-text"></p>
       </div>  
+      </div>
 
 '
 ?>
